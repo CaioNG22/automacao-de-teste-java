@@ -30,13 +30,13 @@ public class testeAutomacao1 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS); // tempo limite
 		
-		driver.get(url);	//abrir site	
+		driver.get(url); //abrir site	
 		driver.findElement(By.linkText("BROWSE")).click(); //clicar botão		
 		driver.findElement(By.name("query")).sendKeys("Science: Computers"); //digitar palavras	
 		driver.findElement(By.id("query")).sendKeys(Keys.ENTER);//executar uma ação de um botão
 		
 		//leitura de texto do site e conferir(string)
-		String erro = driver.findElement(By.className("alert-danger")).getText();	//ele procura a classe e pega o texto da classe 	
+		String erro = driver.findElement(By.className("alert-danger")).getText(); // procura a classe e pega o texto da classe 	
 		assertEquals("No questions found.",erro); // verifica se a string confere com o que está no objeto
 	}
 	
