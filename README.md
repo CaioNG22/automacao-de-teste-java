@@ -37,4 +37,7 @@ Finally, you will have to create a new scenario that was not described previousl
 + FrameWork: Selenium  
 + IDE: Eclipse  
 + Project Type: Maven
+  
+ ### Code Location: 
+ automacao-de-teste-java/testeAutomacao/src/test/java/br/com/testeAutomacao/ 
 
