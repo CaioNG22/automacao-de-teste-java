@@ -39,8 +39,7 @@ public class testeAutomacao3 {
 		System.setProperty("webdriver.chrome.driver", "C:\\browser\\chromedriver.exe");	
 		ChromeDriver driver = new ChromeDriver();
 		
-		driver.get(url);		
-		
+		driver.get(url);			
 		driver.findElement(By.linkText("LOGIN")).click(); 
 		driver.findElement(By.linkText("REGISTER")).click();
 		driver.findElement(By.name("username")).sendKeys("alunouna123");

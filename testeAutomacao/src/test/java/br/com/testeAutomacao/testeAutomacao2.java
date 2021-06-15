@@ -32,20 +32,13 @@ public class testeAutomacao2 {
 		ChromeDriver driver = new ChromeDriver();
 		
 		driver.get(url);		
-		
 		driver.findElement(By.linkText("BROWSE")).click(); //clicar botão		
 		driver.findElement(By.name("query")).sendKeys("Science: Computers"); //digitar palavras		
 		driver.findElement(By.name("type")).sendKeys("Category"); 
-		driver.findElement(By.className("btn-sm")).click(); //clicar no nome do botão
+		driver.findElement(By.className("btn-sm")).click(); //clicar no nome do botão		
 		
-		
-		equals(driver.findElement(By.xpath("//*[@id=\"page-top\"]/div[2]/table/tbody/tr[25]")));
-		
-		equals(driver.findElementByClassName("pagination-lg") ); //verifica se há essa classe na página
-		
-		
-	
-		
+		equals(driver.findElement(By.xpath("//*[@id=\"page-top\"]/div[2]/table/tbody/tr[25]")));		
+		equals(driver.findElementByClassName("pagination-lg") ); //verifica se há essa classe na página		
 	}
 	
 }
